@@ -10,7 +10,7 @@ const Cards = ({animeInfo}) => {
                 <h4>{name}</h4>
                 <p className='mb-0'>Price: $ {price}</p>
                 </div>
-                <button className=' add-btn btn-primary fw-bold mt-2'>ADD TO CART <i class="fa-solid fa-cart-shopping"></i></button>       
+                <button className=' add-btn btn-primary fw-bold mt-2'>ADD TO CART <i className="fa-solid fa-cart-shopping"></i></button>       
             </div>
         </div>
     );
