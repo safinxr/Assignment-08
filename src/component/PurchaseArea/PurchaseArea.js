@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './PurchaseArea.css'
 import Cards from '../Cards/Cards';
+import SelectedArea from '../SelectedArea/SelectedArea';
 
 const PurchaseArea = () => {
     const [animes, setAnimes] = useState([])
@@ -10,17 +11,17 @@ const PurchaseArea = () => {
         .then(data => setAnimes(data))
     },[])
     return (
-        <div className='row m-5'>
-            <div className='col-12 col-md-9'>
-                <div className='row g-5'>
+        <div className='row'>
+            <div className='col-12 col-md-8'>
+                <div className='row g-5 mx-5'>
                     {
                         animes.map(anime => <Cards animeInfo={anime} key={anime.id}></Cards>)
                     }
                 </div>
             </div>
 
-            <div className='col-12 col-md-3'>
-                <h1>Selected Anime</h1>
+            <div className='col-12 col-md-4'>
+                <SelectedArea></SelectedArea>
             </div>
         </div>
     );
