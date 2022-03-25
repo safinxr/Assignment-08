@@ -1,73 +1,73 @@
 [
     {
       "id": 1,
-      "picture": "http://placehold.it/32x32",
+      "img": "http://placehold.it/32x32",
       "price": 21,
       "name": "Concetta Cruz"
     },
     {
       "id": 2,
-      "picture": "http://placehold.it/32x32",
+      "img": "http://placehold.it/32x32",
       "price": 22,
       "name": "Lorrie Mcguire"
     },
     {
       "id": 3,
-      "picture": "http://placehold.it/32x32",
+      "img": "http://placehold.it/32x32",
       "price": 34,
       "name": "Lois Hester"
     },
     {
       "id": 4,
-      "picture": "http://placehold.it/32x32",
+      "img": "http://placehold.it/32x32",
       "price": 34,
       "name": "Dianne Mendez"
     },
     {
       "id": 5,
-      "picture": "http://placehold.it/32x32",
+      "img": "http://placehold.it/32x32",
       "price": 32,
       "name": "Erin Woodard"
     },
     {
       "id": 6,
-      "picture": "http://placehold.it/32x32",
+      "img": "http://placehold.it/32x32",
       "price": 23,
       "name": "Wolfe Gallagher"
     },
     {
       "id": 7,
-      "picture": "http://placehold.it/32x32",
+      "img": "http://placehold.it/32x32",
       "price": 40,
       "name": "Marina Pruitt"
     },
     {
       "id": 8,
-      "picture": "http://placehold.it/32x32",
+      "img": "http://placehold.it/32x32",
       "price": 26,
       "name": "Roberson Cohen"
     },
     {
       "id": 9,
-      "picture": "http://placehold.it/32x32",
+      "img": "http://placehold.it/32x32",
       "price": 36,
       "name": "Melendez Pace"
     },
     {
       "id": 10,
-      "picture": "http://placehold.it/32x32",
+      "img": "http://placehold.it/32x32",
       "price": 26,
       "name": "Ingrid Calderon"
     },
     {
       "id": 11,
-      "picture": "http://placehold.it/32x32",
+      "img": "http://placehold.it/32x32",
       "price": 32,
       "name": "Meadows Hurley"
     },
     {
       "id": 12,
-      "picture": "http://placehold.it/32x32",
+      "img": "http://placehold.it/32x32",
       "price": 24,
       "name": "Jennie Cherry"
     }
