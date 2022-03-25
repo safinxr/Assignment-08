@@ -1,13 +1,16 @@
 import React from 'react';
 import './Cards.css'
-// import logo from '../../img/img2.jpg'
 const Cards = ({animeInfo}) => {
     const {img, name, price} = animeInfo
     return (
         <div className='col-12 col-md-4'>
-            <div className='shadow-lg card-size p-2'>
+            <div className='shadow-lg card-size '>
                 <img className='margin-x' src={img} alt="" />
-                <h5>{name}</h5>
+                <div className=' px-2'>
+                <h4>{name}</h4>
+                <p className='mb-0'>Price: $ {price}</p>
+                </div>
+                <button className=' add-btn btn-primary fw-bold mt-2'>ADD TO CART <i class="fa-solid fa-cart-shopping"></i></button>       
             </div>
         </div>
     );
