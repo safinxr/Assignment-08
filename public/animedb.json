@@ -1,74 +1,74 @@
 [
     {
       "id": 1,
-      "img": "http://placehold.it/32x32",
+      "img": "https://animekisa.tv/img/coversjpg/attack-on-titan-final-season.png.webp?117",
       "price": 21,
-      "name": "Concetta Cruz"
+      "name": "Attack on Titan"
     },
     {
       "id": 2,
-      "img": "http://placehold.it/32x32",
+      "img": "https://animekisa.tv/img/coversjpg/kimetsu-no-yaiba.jpg.webp?117",
       "price": 22,
-      "name": "Lorrie Mcguire"
+      "name": "Demon Slayer"
     },
     {
       "id": 3,
-      "img": "http://placehold.it/32x32",
+      "img": "https://animekisa.tv/img/coversjpg/one-piece.jpg.webp?117",
       "price": 34,
-      "name": "Lois Hester"
+      "name": "One Piece"
     },
     {
       "id": 4,
-      "img": "http://placehold.it/32x32",
+      "img": "https://animekisa.tv/img/coversjpg/jujutsu-kaisen.jpg.webp?117",
       "price": 34,
-      "name": "Dianne Mendez"
+      "name": "Jujutsu Kaisen"
     },
     {
       "id": 5,
-      "img": "http://placehold.it/32x32",
+      "img": "https://animekisa.tv/img/coversjpg/boku-no-hero-academia-3-jdfj.jpg.webp?117",
       "price": 32,
-      "name": "Erin Woodard"
+      "name": "My Hero Academia"
     },
     {
       "id": 6,
-      "img": "http://placehold.it/32x32",
+      "img": "https://animekisa.tv/img/coversjpg/naruto.jpg.webp?117",
       "price": 23,
-      "name": "Wolfe Gallagher"
+      "name": "Naruto"
     },
     {
       "id": 7,
-      "img": "http://placehold.it/32x32",
+      "img": "https://animekisa.tv/img/coversjpg/black-clover.jpg.webp?117",
       "price": 40,
-      "name": "Marina Pruitt"
+      "name": "Black Clover"
     },
     {
       "id": 8,
-      "img": "http://placehold.it/32x32",
+      "img": "https://animekisa.tv/img/coversjpg/hunter-x-hunter-phantom-rouge.jpg.webp?117",
       "price": 26,
-      "name": "Roberson Cohen"
+      "name": "Hunter x hunter"
     },
     {
       "id": 9,
-      "img": "http://placehold.it/32x32",
+      "img": "https://animekisa.tv/img/coversjpg/sono-bisque-doll-wa-koi-wo-suru-dubbed.png.webp?117",
       "price": 36,
-      "name": "Melendez Pace"
+      "name": "My Dress-Up Darling"
     },
     {
       "id": 10,
-      "img": "http://placehold.it/32x32",
+      "img": "https://animekisa.tv/img/coversjpg/one-punch-man.jpg.webp?117",
       "price": 26,
-      "name": "Ingrid Calderon"
+      "name": "One Punch Man"
     },
     {
       "id": 11,
-      "img": "http://placehold.it/32x32",
+      "img": "https://animekisa.tv/img/coversjpg/tokyo-revengers-uncensored.png.webp?117",
       "price": 32,
-      "name": "Meadows Hurley"
+      "name": "MTokyo Revengers"
     },
     {
       "id": 12,
-      "img": "http://placehold.it/32x32",
+      "img": "https://animekisa.tv/img/coversjpg/tokyo-ghoul.jpg.webp?117",
       "price": 24,
-      "name": "Jennie Cherry"
+      "name": "Tokyo Ghoul"
     }
   ]

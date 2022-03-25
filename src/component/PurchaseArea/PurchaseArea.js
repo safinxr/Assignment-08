@@ -11,10 +11,12 @@ const PurchaseArea = () => {
     },[])
     return (
         <div className='row m-5'>
-            <div className='col-12 col-md-9 row'>
-                {
-                    animes.map(anime => <Cards animeInfo={anime} key={anime.id}></Cards>)
-                }
+            <div className='col-12 col-md-9'>
+                <div className='row g-5'>
+                    {
+                        animes.map(anime => <Cards animeInfo={anime} key={anime.id}></Cards>)
+                    }
+                </div>
             </div>
 
             <div className='col-12 col-md-3'>
