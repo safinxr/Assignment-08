@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './PurchaseArea.css'
 import Cards from '../Cards/Cards';
 import SelectedArea from '../SelectedArea/SelectedArea';
+import Swal from 'sweetalert2'
 
 const PurchaseArea = () => {
     const [animes, setAnimes] = useState([])
@@ -15,7 +16,22 @@ const PurchaseArea = () => {
 
     const addButton = (animeInfo) =>{
         if(selected.includes(animeInfo)){
-            alert('This anime allrady selekted')
+            Swal.fire({
+                title: 'Error!',
+                text: 'You already added this Anime',
+                icon: 'error',
+                confirmButtonText: 'Close'
+              })
+              return;
+        }
+        if(selected.length >=4){
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'You already selected 4 Anime',
+                
+              })
+              return;
         }
         else{
             setSelected([...selected, animeInfo])
@@ -24,14 +40,14 @@ const PurchaseArea = () => {
     return (
         <div className='row'>
             <div className='col-12 col-md-8'>
-                <div className='row g-5 mx-5'>
+                <div className='row m-2 g-5'>
                     {
                         animes.map(anime => <Cards animeInfo={anime} key={anime.id} addButton={addButton}></Cards>)
                     }
                 </div>
             </div>
 
-            <div className='col-12 col-md-4'>
+            <div className='col-12 col-md-4 my-5'>
                 
                 <div className='shadow-lg p-3 radius'>
                     <h3>Selected Anime</h3>
