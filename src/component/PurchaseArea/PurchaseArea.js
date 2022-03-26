@@ -14,7 +14,12 @@ const PurchaseArea = () => {
 
 
     const addButton = (animeInfo) =>{
-        setSelected([...selected, animeInfo])
+        if(selected.includes(animeInfo)){
+            alert('This anime allrady selekted')
+        }
+        else{
+            setSelected([...selected, animeInfo])
+        }
     }
     return (
         <div className='row'>
@@ -31,7 +36,7 @@ const PurchaseArea = () => {
                 <div className='shadow-lg p-3 radius'>
                     <h3>Selected Anime</h3>
                     {
-                    selected.map(data => <SelectedArea animeInfo={data}></SelectedArea>)
+                    selected.map(data => <SelectedArea animeInfo={data} key={data.id}></SelectedArea>)
                     }
                     <div className='mt-5'>
                         <button className='btn btn-success me-4 '>CHOOSE 1 FOR ME</button>
