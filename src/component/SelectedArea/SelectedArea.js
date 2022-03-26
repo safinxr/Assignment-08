@@ -3,7 +3,7 @@ import './SelectedArea.css'
 const SelectedArea = ({animeInfo}) => {
     const {img, name} =animeInfo
     return (
-        <div className=' p-3 d-flex justify-content-between align-items-center xo'>
+        <div className=' px-3 py-2 d-flex justify-content-between align-items-center xo'>
             <div className='d-flex align-items-center selected-anime name'>
                 <img className='logo-img' src={img} alt="" />
                 <h4 className='ms-3'>{name}</h4>

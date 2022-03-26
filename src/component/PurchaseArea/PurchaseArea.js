@@ -107,9 +107,9 @@ const PurchaseArea = () => {
                 </div>
             </div>
 
-            <div className='col-3 col-md-4 col-lg-4 my-5'>
+            <div className='col-3 col-md-4 col-lg-4 my-5 '>
                 
-                <div className='shadow-lg bg card-y p-3'>
+                <div className='shadow-lg bg card-y p-3 sticky '>
                     <h3>Selected Anime</h3>
                     {
                     selected.map(data => <SelectedArea animeInfo={data} key={data.id}></SelectedArea>)
