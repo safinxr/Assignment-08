@@ -13,6 +13,17 @@ const PurchaseArea = () => {
         .then(data => setAnimes(data))
     },[])
 
+    // Delete button 🤐🤐🤐🤐🤐🤐🤐🤐🤐🤐🤐
+
+    const deleteBtn = (id) =>{
+       const newArry = selected.filter(anime =>{
+           if(anime.id !== id){
+               return anime
+           }
+       })
+       setSelected(newArry)
+    }
+
     // Add button area🍔🍔🍔🍔🍔🍔🍔🍔🍔🍔
 
     const addButton = (animeInfo) =>{
@@ -112,7 +123,7 @@ const PurchaseArea = () => {
                 <div className='shadow-lg bg card-y p-3 sticky '>
                     <h3>Selected Anime</h3>
                     {
-                    selected.map(data => <SelectedArea animeInfo={data} key={data.id}></SelectedArea>)
+                    selected.map(data => <SelectedArea animeInfo={data} key={data.id} deleteBtn={deleteBtn}></SelectedArea>)
                     }
                     <div className='mt-5'>
                         <button onClick={()=>{chooseBtn()}} className='l-button btn btn-success me-4 '><p>TRY YOUR LUCk</p></button>

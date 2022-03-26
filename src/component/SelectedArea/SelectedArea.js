@@ -1,7 +1,8 @@
 import React from 'react';
 import './SelectedArea.css'
-const SelectedArea = ({animeInfo}) => {
-    const {img, name} =animeInfo
+const SelectedArea = (props) => {
+    const {animeInfo, deleteBtn} = props
+    const {img, name, id} =animeInfo
     return (
         <div className=' px-3 py-2 d-flex justify-content-between align-items-center xo'>
             <div className='d-flex align-items-center selected-anime name'>
@@ -10,7 +11,7 @@ const SelectedArea = ({animeInfo}) => {
             
             </div>
             <div>
-                <h4 className='text-right'><i className="fa-solid fa-trash"></i></h4>
+                <h4 onClick={() =>{deleteBtn(id)}} className='text-right'><i className="fa-solid fa-trash"></i></h4>
             </div>
         </div>
     );
