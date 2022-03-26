@@ -88,6 +88,13 @@ const PurchaseArea = () => {
     };
 
 
+    // CHOOSE AGAIN button 🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖
+
+    const cleanBtn =()=>{
+        setSelected([])
+    }
+
+
     // Purchese display area 📱📱📱📱📱📱📱📱📱📱📱
 
     return (
@@ -109,7 +116,7 @@ const PurchaseArea = () => {
                     }
                     <div className='mt-5'>
                         <button onClick={()=>{chooseBtn()}} className='btn btn-success me-4 '>TRY YOUR LUCk</button>
-                        <button className='btn btn-info'>CHOOSE AGAIN</button>
+                        <button onClick={()=>{cleanBtn()}} className='btn btn-info'>CHOOSE AGAIN</button>
                     </div>
                 </div>
             </div>
