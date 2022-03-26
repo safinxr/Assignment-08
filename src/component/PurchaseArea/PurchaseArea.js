@@ -29,7 +29,7 @@ const PurchaseArea = () => {
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...',
-                text: 'You already selected 4 Anime',
+                text: 'You can only choose 4 Anime',
                 
               })
               return;
@@ -99,7 +99,7 @@ const PurchaseArea = () => {
 
     return (
         <div className='row'>
-            <div className='col-12 col-md-8'>
+            <div className='col-9 col-md-8 col-lg-8 '>
                 <div className='row m-2 g-5'>
                     {
                         animes.map(anime => <Cards animeInfo={anime} key={anime.id} addButton={addButton}></Cards>)
@@ -107,16 +107,17 @@ const PurchaseArea = () => {
                 </div>
             </div>
 
-            <div className='col-12 col-md-4 my-5'>
+            <div className='col-3 col-md-4 col-lg-4 my-5'>
                 
-                <div className='shadow-lg bg p-3 radius'>
+                <div className='shadow-lg bg card-y p-3'>
                     <h3>Selected Anime</h3>
                     {
                     selected.map(data => <SelectedArea animeInfo={data} key={data.id}></SelectedArea>)
                     }
                     <div className='mt-5'>
-                        <button onClick={()=>{chooseBtn()}} className='btn btn-success me-4 '>TRY YOUR LUCk</button>
-                        <button onClick={()=>{cleanBtn()}} className='btn btn-info'>CHOOSE AGAIN</button>
+                        <button onClick={()=>{chooseBtn()}} className='l-button btn btn-success me-4 '><p>TRY YOUR LUCk</p></button>
+                        
+                        <button onClick={()=>{cleanBtn()}} className='l-button btn btn-info'><p>CHOOSE AGAIN</p></button>
                     </div>
                 </div>
             </div>

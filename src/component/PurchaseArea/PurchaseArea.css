@@ -1,6 +1,37 @@
 .bg{
     background-color: aliceblue;
-}
-.radius{
     border-radius: 20px 0 0 20px;
 }
+.card-y button{
+        height: 40px;
+
+}
+@media only screen and (max-width: 576px) {
+    .bg{
+        padding: 0;
+    }
+    
+    .card-y{
+        padding: 0px;
+    }
+    .card-y h3{
+        font-size: 12px;
+        
+    }
+    .name h4{
+        display: none;
+    }
+    .xo{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-y button{
+        width: 50px;
+        height: 30px;
+        margin-bottom: 5px;
+    }
+    .l-button p{
+        font-size: 5px;
+    }
+  }

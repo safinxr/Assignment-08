@@ -1,12 +1,12 @@
 import React from 'react';
 import './SelectedArea.css'
 const SelectedArea = ({animeInfo}) => {
-    const {img, name, price} =animeInfo
+    const {img, name} =animeInfo
     return (
-        <div className='bg-light my-4 shadow-lg p-3 d-flex justify-content-between align-items-center xo'>
-            <div className='d-flex align-items-center selected-anime '>
-                <img src={img} alt="" />
-                <h4>{name}</h4>
+        <div className=' p-3 d-flex justify-content-between align-items-center xo'>
+            <div className='d-flex align-items-center selected-anime name'>
+                <img className='logo-img' src={img} alt="" />
+                <h4 className='ms-3'>{name}</h4>
             
             </div>
             <div>

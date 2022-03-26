@@ -4,7 +4,7 @@ const Cards = (props) => {
     const {animeInfo, addButton} = props
     const {img, name, price} =animeInfo
     return (
-        <div className='col-12 col-md-4'>
+        <div className='col-12 col-md-6 col-lg-4 card-x'>
             <div className='shadow-lg card-size '>
                 <img className='margin-x' src={img} alt="" />
                 <div className=' p-2'>
