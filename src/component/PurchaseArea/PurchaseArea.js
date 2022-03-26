@@ -13,6 +13,7 @@ const PurchaseArea = () => {
         .then(data => setAnimes(data))
     },[])
 
+    // Add button area🍔🍔🍔🍔🍔🍔🍔🍔🍔🍔
 
     const addButton = (animeInfo) =>{
         if(selected.includes(animeInfo)){
@@ -37,6 +38,28 @@ const PurchaseArea = () => {
             setSelected([...selected, animeInfo])
         }
     }
+
+    // Choose button 🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩🍩
+    
+    const chooseBtn = () =>{
+        if(selected.length !== 4){
+            Swal.fire({
+                icon: 'warning',
+                title: 'Oops...',
+                text: 'You have to selected 4 Anime',
+                
+              })
+              return;
+        }
+        else{
+            const luckyAnime = selected[Math.floor((Math.random() * 4))]
+            console.log(luckyAnime);
+        }
+    };
+
+
+    // Purchese display area 📱📱📱📱📱📱📱📱📱📱📱
+
     return (
         <div className='row'>
             <div className='col-12 col-md-8'>
@@ -55,7 +78,7 @@ const PurchaseArea = () => {
                     selected.map(data => <SelectedArea animeInfo={data} key={data.id}></SelectedArea>)
                     }
                     <div className='mt-5'>
-                        <button className='btn btn-success me-4 '>CHOOSE 1 FOR ME</button>
+                        <button onClick={()=>{chooseBtn()}} className='btn btn-success me-4 '>CHOOSE 1 FOR ME</button>
                         <button className='btn btn-info'>CHOOSE AGAIN</button>
                     </div>
                 </div>
