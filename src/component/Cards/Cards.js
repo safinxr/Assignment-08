@@ -1,7 +1,8 @@
 import React from 'react';
 import './Cards.css'
-const Cards = ({animeInfo}) => {
-    const {img, name, price} = animeInfo
+const Cards = (props) => {
+    const {animeInfo, addButton} = props
+    const {img, name, price} =animeInfo
     return (
         <div className='col-12 col-md-4'>
             <div className='shadow-lg card-size '>
@@ -10,7 +11,7 @@ const Cards = ({animeInfo}) => {
                 <h4>{name}</h4>
                 <p className='mb-0'>Price: $ {price}</p>
                 </div>
-                <button className=' add-btn btn-primary fw-bold mt-2'>ADD TO CART <i className="fa-solid fa-cart-shopping"></i></button>       
+                <button onClick={ () =>{addButton(animeInfo)}} className=' add-btn btn-primary fw-bold mt-2'>ADD TO CART <i className="fa-solid fa-cart-shopping"></i></button>       
             </div>
         </div>
     );

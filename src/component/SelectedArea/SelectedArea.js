@@ -1,13 +1,17 @@
 import React from 'react';
 import './SelectedArea.css'
-const SelectedArea = () => {
+const SelectedArea = ({animeInfo}) => {
+    const {img, name, price} =animeInfo
     return (
-        <div className='shadow-lg p-3 radius'>
-            <h3>Selected Anime</h3>
-            {/* <div className='mt-5'>
-                <button className='btn btn-success me-4 '>CHOOSE 1 FOR ME</button>
-                <button className='btn btn-info'>CHOOSE AGAIN</button>
-            </div> */}
+        <div className='my-4 shadow-lg p-3 d-flex justify-content-between align-items-center rounded'>
+            <div className='d-flex align-items-center selected-anime '>
+                <img src={img} alt="" />
+                <h4>{name}</h4>
+            
+            </div>
+            <div>
+                <h4 className='text-right'><i className="fa-solid fa-trash"></i></h4>
+            </div>
         </div>
     );
 };
