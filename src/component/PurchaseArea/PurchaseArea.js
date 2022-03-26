@@ -52,8 +52,38 @@ const PurchaseArea = () => {
               return;
         }
         else{
-            const luckyAnime = selected[Math.floor((Math.random() * 4))]
-            console.log(luckyAnime);
+            const luckyAnime = selected[Math.floor((Math.random() * 4))];
+            const {img, name , price} = luckyAnime;
+            const discount =Math.floor((Math.random() * 60) + 10);
+            const newPrice = price * discount / 100; 
+            const discountText =`congratulation you got ${discount}% discount on this anime
+
+            Pegular price : $${price}
+            New price: $${newPrice}
+            `
+            Swal.fire({
+                imageUrl:img,
+                imageHeight:250,
+                title: name,
+                text: discountText,
+                html:
+                `<h4>congratulation you got <span style="color:red; font-weight: 700;">${discount}% discount </span> on this anime </h4>
+                <p style="margin:0;">Regular price : <span style="text-decoration: line-through;">$${price}</span></p>
+                <p>New price: $${newPrice}</p>
+                `,
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Purchase'
+              }).then((result) => {
+                if (result.isConfirmed) {
+                  Swal.fire(
+                    'Purchase successful',
+                    'Now enjoy the anime',
+                    'success'
+                  )
+                }
+              })
         }
     };
 
@@ -72,13 +102,13 @@ const PurchaseArea = () => {
 
             <div className='col-12 col-md-4 my-5'>
                 
-                <div className='shadow-lg p-3 radius'>
+                <div className='shadow-lg bg p-3 radius'>
                     <h3>Selected Anime</h3>
                     {
                     selected.map(data => <SelectedArea animeInfo={data} key={data.id}></SelectedArea>)
                     }
                     <div className='mt-5'>
-                        <button onClick={()=>{chooseBtn()}} className='btn btn-success me-4 '>CHOOSE 1 FOR ME</button>
+                        <button onClick={()=>{chooseBtn()}} className='btn btn-success me-4 '>TRY YOUR LUCk</button>
                         <button className='btn btn-info'>CHOOSE AGAIN</button>
                     </div>
                 </div>
